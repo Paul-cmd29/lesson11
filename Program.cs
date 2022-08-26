@@ -30,6 +30,7 @@ namespace lesson11
             Teachers c = new Teachers();
             Console.WriteLine("Teachers info:");
             c.TeacherInfo();
+            Console.WriteLine("Good Luck!");
         }
     }
     class StudentID
