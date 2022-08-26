@@ -6,10 +6,12 @@ namespace lesson11
     {
         static void Main(string[] args)
         {
-            
-            StudentID student = new StudentID();
-            Console.WriteLine(student.Hello("Hello Dear" + " " ));
 
+            StudentID student = new StudentID();
+            Console.WriteLine(student.Hello("Hello Dear" + " "));
+
+
+            Console.WriteLine("Classmate: ");
             ClassRoom a = new ClassRoom();
             a.Students();
             a.newstudenst = "Ivan Bravo";
@@ -18,13 +20,13 @@ namespace lesson11
             Schedule b = new Schedule();
             Console.WriteLine("Standart Schedule:");
             b.StandartSchedule();
-            Console.WriteLine("Updated Schedule:");            
+            Console.WriteLine("Updated Schedule:");
             b.LessonName = "Math";
             b.DayOfTheWeek = "Monday";
             b.TimeOfLesson = 13.30;
-           
-            Console.WriteLine(b.LessonName + " - " + b.DayOfTheWeek + " " +  b.TimeOfLesson);
-          
+
+            Console.WriteLine(b.LessonName + " - " + b.DayOfTheWeek + " " + b.TimeOfLesson);
+
             Teachers c = new Teachers();
             Console.WriteLine("Teachers info:");
             c.TeacherInfo();
@@ -37,7 +39,7 @@ namespace lesson11
             Console.WriteLine("Enter yor name!");
             string name = Console.ReadLine();
             return message + name;
-        }
+        }    
 
         
     }
