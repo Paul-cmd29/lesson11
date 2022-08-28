@@ -47,20 +47,20 @@ namespace lesson11
 
     class ClassRoom
     {
-        private string NewStudents;
-        public string newstudenst
+        private string NewStudents;//private field name should start from lowercase letter
+        public string newstudenst//property should start from capital letter. Also property name must be the same as related private field name - just started from capital letter
         {
             get { return NewStudents; }
             set { NewStudents = value; }
         }
-        public void Students()
+        public void Students()//name of the void should be more meaningful - i.e. GetStudents or PrintStudentsInfo etc.
         {
             string[] pupils = { "Joanna Smith", "Jadon Shaw", "Jay Wisher", "Anasteisha Ridewald", "Jack Stones" };
             foreach(var a in pupils)
             {
                  Console.WriteLine(a);
             }
-            
+          //too big whitespace  
 
         }
         
@@ -76,21 +76,21 @@ namespace lesson11
             Console.WriteLine(SSchedule[2]);
         }
         private string lesson;
-        public string LessonName
+        public string LessonName//property should start from capital letter. Also property name must be the same as related private field name - just started from capital letter
         {
             get { return lesson; }
             set { lesson = value; }
         }
 
         private string dayofweek;
-        public string DayOfTheWeek
+        public string DayOfTheWeek//property should start from capital letter. Also property name must be the same as related private field name - just started from capital letter
         {
             get { return dayofweek; }
             set { dayofweek = value; }
         }
 
         private double timeoflesson;
-        public double TimeOfLesson
+        public double TimeOfLesson//property should start from capital letter. Also property name must be the same as related private field name - just started from capital letter
         {
             get { return timeoflesson; }
             set { timeoflesson = value; }
@@ -110,4 +110,4 @@ namespace lesson11
         }
     }
 }
-
+//checked
